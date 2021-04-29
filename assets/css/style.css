@@ -70,10 +70,7 @@ header div:nth-of-type(3) h3{
     font-size: 3em;
 }
 /* =====MAIN; STUCK IN THE MIDDLE===== */
-.stuck{
-    
-    /* grid-template-rows: repeat(4,1fr); */
-}
+
 .stuck .grid1{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -215,6 +212,8 @@ header div:nth-of-type(3) h3{
      background-repeat: no-repeat;
      height: 40vh;
      width: 50%;
+     position: relative;
+     top: 5em;
 }
 .bearheads{
      background-image: url(../img/gb2.png);
@@ -224,6 +223,7 @@ header div:nth-of-type(3) h3{
      width: 30%;
      position: relative;
      right: 3em;
+     top: 5em;
 }
 /* =====MAIN; POPPY BEAR===== */
 .poppyBear{
@@ -273,4 +273,45 @@ header div:nth-of-type(3) h3{
     background-repeat: no-repeat;
     height: 40vh;
     width: 50%;
+}
+/* ========FOOTER========= */
+footer{
+    margin-top: 3em;
+    background-color: var(--blacky);
+    color: var(--whity);
+    width: 100%;
+    display: flex;
+}
+footer>div{
+    width: 50%;
+    padding-top:5em;
+    margin-left: 4em;
+}
+footer>div p:first-child{
+    padding-bottom: 1em;
+}
+footer>div a{
+    display: block;
+    padding:0.5em 1em;
+    text-decoration: none;
+    color: var(--whity);
+    border-style: solid;
+    width: 23%;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+footer>div img{
+    width: 2em;
+    height: 2em;
+}
+footer div:nth-of-type(2){
+    width: 40%;
+    padding-top:5em;
+    border-style: groove;
+    justify-self: right;
+    align-self: flex-end;
+}
+footer div:nth-of-type(2) img{
+    width:5em ;
+    margin-bottom: 2em;
 }
