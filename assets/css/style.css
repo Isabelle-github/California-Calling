@@ -109,6 +109,9 @@ header div:nth-of-type(3) h3{
     grid-column: 2/ span 1;
     grid-row: 1/ span1;  
 }
+.stuck article div h2{
+    font-size: 2.5em;
+}
 .stuck article img{
     grid-column: 3/ span 1;
     grid-row: 2/ span1; 
@@ -236,11 +239,9 @@ header div:nth-of-type(3) h3{
 }
 .poppyBear div:nth-of-type(1){
     width: 20%;
-    padding-top: 10em;
 }
 .poppyBear div:nth-of-type(2){
     width: 50%;
-    padding-top: 10em;
 }
 .poppyBear div:nth-of-type(2) .strich::before{
     content: "";
@@ -281,8 +282,9 @@ footer{
     color: var(--whity);
     width: 100%;
     display: flex;
+    position: relative;
 }
-footer>div{
+footer>div:nth-of-type(1){
     width: 50%;
     padding-top:5em;
     margin-left: 4em;
@@ -306,7 +308,6 @@ footer>div img{
 }
 footer div:nth-of-type(2){
     width: 40%;
-    padding-top:5em;
     border-style: groove;
     justify-self: right;
     align-self: flex-end;
@@ -314,4 +315,37 @@ footer div:nth-of-type(2){
 footer div:nth-of-type(2) img{
     width:5em ;
     margin-bottom: 2em;
+}
+/* ======ANIMATION-Circle======= */
+.animCircle{
+    height: 20em;
+    position: relative;
+    left: 70%;
+    bottom: 5em;
+    animation: animCircl 10s linear infinite;
+}
+@keyframes animCircl{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/* ======ANIMATION-Banner======= */
+.animText{
+    position:absolute;
+    width: 85%;
+    border-style: ridge;
+    height: 10%;
+    left: 40%;
+    top: 34%;
+    transform: rotate(40deg);
+    text-align: center;
+    background-color: var(--whity);
+}
+.animText h4{
+    font-size: 2em;
+    color: var(--blacky);
+}
+.animText span{
+    -webkit-text-stroke: 2px var(--blacky);
+    color: var(--whity);
 }
