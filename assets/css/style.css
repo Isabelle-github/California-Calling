@@ -1,0 +1,72 @@
+@font-face {
+    font-family: "LarishNeue";
+    src: url("../fonts/Larish\ Neue\ Semibold.woff2") format("woff2"),
+         url("../fonts/LarishNeueSemibold.woff") format("woff");
+}
+:root{
+    --blacky: #000;
+    --whity: #fff
+}
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "LarishNeue";
+}
+header{
+    background-color: var(--blacky);
+    width: 100%;
+    color: var(--whity);
+}
+.line{
+    border-left: 2px solid gray;
+    height: 10vh;
+    position: relative;
+    left: 50%;
+}
+header h1{
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+    width: 30%;
+    margin:0 auto;
+}
+header span{
+    -webkit-text-stroke: 1px var(--whity);
+    color: var(--blacky);
+}
+header>p{
+    text-align: center;
+    font-size: 0.5em;
+}
+header div:nth-of-type(2){
+    width: 80%;
+    border-style: solid;
+    margin:2em auto;
+}
+header a{
+    position: relative;
+    display: inline-block;
+    left:77%;
+    color: var(--whity);
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border: 1px solid;
+}
+header h2{
+    /* width: 60%; */
+    font-size: 3em;
+    padding: 0 20% 1em 10%;
+}
+header div:nth-of-type(3){
+    margin: 0 auto;
+    width: 80%;
+    background-image: url(../img/cc-circle-2.png);
+}
+.font--p{
+    font-size: 0.5em;
+}
+header div:nth-of-type(3) h3{
+    font-size: 3em;
+}
+
