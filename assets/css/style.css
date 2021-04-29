@@ -41,7 +41,6 @@ header>p{
 }
 header div:nth-of-type(2){
     width: 80%;
-    border-style: solid;
     margin:2em auto;
 }
 header a{
@@ -61,7 +60,8 @@ header h2{
 header div:nth-of-type(3){
     margin: 0 auto;
     width: 80%;
-    background-image: url(../img/cc-circle-2.png);
+    background: no-repeat right/30% url(../img/map.svg);
+    padding-bottom:5em; 
 }
 .font--p{
     font-size: 0.5em;
@@ -69,4 +69,208 @@ header div:nth-of-type(3){
 header div:nth-of-type(3) h3{
     font-size: 3em;
 }
+/* =====MAIN; STUCK IN THE MIDDLE===== */
+.stuck{
+    
+    /* grid-template-rows: repeat(4,1fr); */
+}
+.stuck .grid1{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    border-style: double;
+    width: 90%;
+    height: 20vh;
+    margin:0 auto;
+    /* background-image: url(../img/action1.jpeg), url(../img/action2.jpeg);
+    background-position: right, left;
+    background-size: 30%, 20%;
+    background-repeat: no-repeat, no-repeat; */
+}
+.stuck div:nth-of-type(1) img:nth-of-type(1){
+    grid-column: 5/ span 2;
+    grid-row: 1/ span1;
+    width:100%;
+    position: relative;
+    bottom: 3em;
+}
+.stuck div:nth-of-type(1) img:nth-of-type(2){
+    grid-column: 1/ span 3;
+    grid-row: 3/ span1;
+    width:50%;
+}
+.stuck .grid2{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(2,1fr);
+    border-style: double;
+    width: 100%;
+    height: 20vh;
+    margin:0 auto;
+}
+.stuck article div{
+    grid-column: 2/ span 1;
+    grid-row: 1/ span1;  
+}
+.stuck article img{
+    grid-column: 3/ span 1;
+    grid-row: 2/ span1; 
+    width: 100%; 
+}
+.stuck div:nth-of-type(2){
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    border-style: double;
+    width: 90%;
+    height: 20vh;
+    margin:0 auto;
+}
+.stuck div:nth-of-type(2) img:nth-of-type(2){
+    grid-column: 5/ span 2;
+    grid-row: 2/ span1;
+    width:100%;
+    position: relative;
+    right: 4em;
+}
+.stuck div:nth-of-type(2) img:nth-of-type(1){
+    grid-column: 1/ span 2;
+    grid-row: 1/ span1;
+    width:100%;
+    position: relative;
+    left: 2em;
+}
 
+.stuck div:nth-of-type(3) img{
+    grid-column: 1/ span 1;
+    grid-row: 2/ span1; 
+    width: 100%;
+}
+.stuck div:nth-of-type(3) p{
+   padding-left: 1em;
+   grid-column: 2/ span 1;
+   grid-row: 2/ span1; 
+   width: 100%;
+}
+.stuck div:nth-of-type(4){
+   display: grid;
+   grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    border-style: double;
+    width: 90%;
+    height: 20vh;
+    margin:0 auto;
+} 
+.stuck div:nth-of-type(4) img{
+    width: 100%;
+    grid-column: 2/ span 1;
+    grid-row: 2/ span1;
+}
+
+/* =====MAIN; GOLDEN BEAR===== */
+.goldenBear{
+    background-color: var(--blacky);
+    color: var(--whity);
+    display: flex;
+    justify-content: space-around;
+    align-items:baseline;
+    flex-wrap: wrap;
+}
+.goldenBear div:nth-of-type(1){
+    width: 20%;
+    padding-top: 10em;
+}
+.goldenBear div:nth-of-type(2){
+    width: 50%;
+    padding-top: 10em;
+}
+.titles{
+    font-size: 3em;
+    padding: 0 20% 0em 0%;
+}
+.texts{
+    font-size: 1.5em;
+}
+.goldenBear div:nth-of-type(2) .strich::before{
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 1.5em;
+    background-color: var(--whity);
+    bottom: 4px;
+    position: relative;
+}
+
+.pics{
+    padding-top: 4em;
+    background-color: var(--blacky);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.bear{
+     background-image: url(../img/goldenbear.png);
+     background-size: cover;
+     background-repeat: no-repeat;
+     height: 40vh;
+     width: 50%;
+}
+.bearheads{
+     background-image: url(../img/gb2.png);
+     background-size: cover;
+     background-repeat: no-repeat;
+     height: 30vh;
+     width: 30%;
+     position: relative;
+     right: 3em;
+}
+/* =====MAIN; POPPY BEAR===== */
+.poppyBear{
+    background-color: var(--whity);
+    color: var(--blacky);
+    display: flex;
+    justify-content: space-around;
+    align-items:baseline;
+    flex-wrap: wrap;
+}
+.poppyBear div:nth-of-type(1){
+    width: 20%;
+    padding-top: 10em;
+}
+.poppyBear div:nth-of-type(2){
+    width: 50%;
+    padding-top: 10em;
+}
+.poppyBear div:nth-of-type(2) .strich::before{
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 1.5em;
+    background-color: var(--blacky);
+    bottom: 4px;
+    position: relative;
+}
+.pics2{
+    padding-top: 4em;
+    background-color: var(--whity);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.bear2{
+    background-image: url(../img/pb3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30vh;
+    width: 30%;
+    position: relative;
+    left: 3em;
+}
+.bearheads2{
+    background-image: url(../img/rosebear.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+    width: 50%;
+}
