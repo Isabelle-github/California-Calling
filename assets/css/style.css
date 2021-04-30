@@ -37,7 +37,10 @@ header span{
 }
 header>p{
     text-align: center;
-    font-size: 0.5em;
+}
+.font--p{
+    font-size: 1.2em;
+    font-weight: lighter;
 }
 header div:nth-of-type(2){
     width: 80%;
@@ -52,6 +55,10 @@ header a{
     padding: 0.5em 1em;
     border: 1px solid;
 }
+header a:hover{
+    background-color: var(--whity);
+    color: var(--blacky);
+}
 header h2{
     /* width: 60%; */
     font-size: 3em;
@@ -63,9 +70,7 @@ header div:nth-of-type(3){
     background: no-repeat right/30% url(../img/map.svg);
     padding-bottom:5em; 
 }
-.font--p{
-    font-size: 0.5em;
-}
+
 header div:nth-of-type(3) h3{
     font-size: 3em;
 }
@@ -75,9 +80,8 @@ header div:nth-of-type(3) h3{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2,1fr);
-    border-style: double;
     width: 90%;
-    height: 20vh;
+    height: 30vh;
     margin:0 auto;
     /* background-image: url(../img/action1.jpeg), url(../img/action2.jpeg);
     background-position: right, left;
@@ -100,9 +104,8 @@ header div:nth-of-type(3) h3{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: repeat(2,1fr);
-    border-style: double;
     width: 100%;
-    height: 20vh;
+    height: 30vh;
     margin:0 auto;
 }
 .stuck article div{
@@ -121,9 +124,8 @@ header div:nth-of-type(3) h3{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2,1fr);
-    border-style: double;
     width: 90%;
-    height: 20vh;
+    height: 30vh;
     margin:0 auto;
 }
 .stuck div:nth-of-type(2) img:nth-of-type(2){
@@ -156,9 +158,8 @@ header div:nth-of-type(3) h3{
    display: grid;
    grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr 2fr;
-    border-style: double;
     width: 90%;
-    height: 20vh;
+    height: 30vh;
     margin:0 auto;
 } 
 .stuck div:nth-of-type(4) img{
@@ -190,8 +191,10 @@ header div:nth-of-type(3) h3{
 }
 .texts{
     font-size: 1.5em;
+    padding-bottom: 1em;
 }
-.goldenBear div:nth-of-type(2) .strich::before{
+
+.goldenBear div:nth-of-type(2) #strich::before{
     content: "";
     display: inline-block;
     height: 2px;
@@ -243,7 +246,7 @@ header div:nth-of-type(3) h3{
 .poppyBear div:nth-of-type(2){
     width: 50%;
 }
-.poppyBear div:nth-of-type(2) .strich::before{
+.poppyBear div:nth-of-type(2) #strich::before{
     content: "";
     display: inline-block;
     height: 2px;
@@ -293,6 +296,9 @@ footer>div:nth-of-type(1){
 footer>div p:first-child{
     padding-bottom: 1em;
 }
+footer>div h2{
+    font-size: 1.5em;
+}
 footer>div a{
     display: block;
     padding:0.5em 1em;
@@ -302,6 +308,11 @@ footer>div a{
     width: 23%;
     margin-top: 3em;
     margin-bottom: 3em;
+    text-align: center;
+}
+footer>div a:hover{
+    background-color: var(--whity);
+    color: var(--blacky);
 }
 footer>div img{
     width: 2em;
@@ -309,13 +320,15 @@ footer>div img{
 }
 footer div:nth-of-type(2){
     width: 40%;
-    border-style: groove;
     justify-self: right;
     align-self: flex-end;
+    position: relative;
+    left: 2em;
 }
 footer div:nth-of-type(2) img{
-    width:5em ;
-    margin-bottom: 2em;
+    width:6em ;
+    margin-bottom: 1.5em;
+    margin-left: 1em;
 }
 /* ======ANIMATION-Circle======= */
 .animCircle{
@@ -334,10 +347,9 @@ footer div:nth-of-type(2) img{
 .animText{
     position:absolute;
     width: 100%;
-    border-style: ridge;
     height: 10%;
     left: 40%;
-    top: 30%;
+    top: 25%;
     transform: rotate(40deg);
     text-align: center;
     background-color: var(--whity);
@@ -348,6 +360,8 @@ footer div:nth-of-type(2) img{
 }
 .animText h4{
     font-size: 2em;
+    position: relative;
+    top: 0.25em;
     color: var(--blacky);
     animation: banner 4s infinite linear alternate;
 }
@@ -358,4 +372,85 @@ footer div:nth-of-type(2) img{
     to{
         transform: translate(5em,0px);
     }
+}
+ /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+@media (min-width:968px)  { 
+    header h1{
+        font-size: 4.5em;
+    }
+    .font--p{
+        font-size: 1.5em;
+    }
+    header a{
+        left:82%;
+    }
+    header div:nth-of-type(3) h3{
+        font-size: 3.5em;
+    }
+    .stuck .grid1{
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2,1fr);
+        height: 40vh;
+    }
+    .stuck .grid2{
+        height: 40vh;
+    }
+    .stuck article div h2{
+        font-size: 4.5em;
+    }
+    .stuck div:nth-of-type(2){
+        height: 40vh;
+    }
+    .stuck div:nth-of-type(4){
+         height: 40vh;
+    } 
+    .goldenBear div:nth-of-type(1), .goldenBear div:nth-of-type(2){
+        padding-top: 20em;
+    }
+    .titles{
+        font-size: 4.5em;
+    }
+    .texts{
+        font-size: 2em;
+        padding-bottom: 1em;
+    }
+
+    .bear{
+        height: 70vh;
+        top: 8em;
+    }
+    .bearheads{
+        height: 50vh;
+        right: 5em;
+        top: 8em;
+    }
+    .bear2{
+        height: 50vh;
+        left: 5em;
+    }
+    .bearheads2{
+        height: 70vh;
+        width: 50%;
+    }
+    footer div:nth-of-type(2){
+        width: 20%;
+        left: 15%;
+        position: relative;
+    }
+    footer>div img{
+        width: 3em;
+        height: 3em;
+        margin-right: 0.5em;
+    }
+    footer div:nth-of-type(2) img{
+        width:6em ;
+        margin-bottom: 3em;
+        margin-left: 1em;
+    }
+    .animCircle{
+        height: 30em;
+        bottom: 10em;
+    }
+    
+
 }
